@@ -1,0 +1,17 @@
+Explanation:
+
+let m = a[0] \ *a[1] * a[2] ... a[n-1]
+
+m mod a[i] = 0 for every i
+
+but if we take m-1
+
+(m-1) mod a[i] = a[i]-1 for every i
+
+and that is the best we can get
+
+so f(m-1) = (a[0]-1) + (a[1]-1) .. (a[n-1]-1)
+
+and of course we don't have to calculate m-1
+
+since we know the value of f(m-1).
